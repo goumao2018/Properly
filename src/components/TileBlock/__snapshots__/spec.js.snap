@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TileBlock /> sets image url 1`] = `
+<TileBlock
+  imageUrl="foo"
+  title=""
+>
+  <div>
+    <h1 />
+    <img
+      alt="Tile Image"
+      src="foo"
+    />
+  </div>
+</TileBlock>
+`;
+
+exports[`<TileBlock /> sets title 1`] = `
+<TileBlock
+  imageUrl=""
+  title="TestBlock"
+>
+  <div>
+    <h1>
+      TestBlock
+    </h1>
+    <img
+      alt="Tile Image"
+      src=""
+    />
+  </div>
+</TileBlock>
+`;
