@@ -1,0 +1,15 @@
+.tileBlock {
+  background: tomato;
+  position: relative;
+}
+
+.tileBlock:before {
+  content: attr(data-notification-count);
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1.5em;
+  display: block;
+  radius: 50%;
+  background: green;
+}

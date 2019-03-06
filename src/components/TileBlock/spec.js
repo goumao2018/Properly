@@ -6,10 +6,10 @@ describe("<TileBlock />", () => {
   it("sets image url", () => {
     const component = mount(
       <TileBlock
-        imageUrl="foo"
+        imageUrl="http://via.placeholder.com/300"
       />
     );
-    expect(component.props().imageUrl).toEqual("foo");
+    expect(component.props().imageUrl).toEqual("http://via.placeholder.com/300");
     expect(component).toMatchSnapshot();
   })
 
