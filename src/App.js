@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import TileBlock from './components/TileBlock';
 import { apartmentBlockData } from './sampleData';
 

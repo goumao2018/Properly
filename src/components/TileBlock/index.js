@@ -4,10 +4,10 @@ import styles from "./styles.scss";
 
 const TileBlock = ({ title, imageUrl, notificationCount}) => {
   return (
-    <div className="tileBlock" data-notification-count={notificationCount === 0 ? "" : notificationCount}>
-      <h1>{title}</h1>
-      <img src={imageUrl} alt="Tile Image" />
-    </div>
+      <div className="tileBlock" data-notification-count={notificationCount === 0 ? "" : notificationCount}>       
+        <img className="propertyImage" src={imageUrl} alt="Property type" />
+        <div className="PropertyTitle">{title}</div>
+      </div>
   )
 }
 
