@@ -1,0 +1,71 @@
+:local {
+  .tileLayout {
+    & > div {
+      display: inline-block;
+      width: 100%;
+    }
+    &[data-column-count="2"] {
+      &:before {
+        display: block;
+        content: "You selected 2 columns";
+      }
+      & > div {
+        width: 50%;
+      }
+    }
+    &[data-column-count="3"] > div {
+      width: 33.33%;
+    }
+  }
+}
+
+/**
+  To sit elements side by side you can use:
+  div {
+    float: left;
+    padding:10px
+  }
+
+  div {
+    display: inline-block;
+  }
+
+  ----
+
+  To center elements
+  
+  div {
+    display: block; <-- needs to be a block element
+    width: 200px <-- needs width
+    margin: auto;
+  }
+
+  .parent {
+    text-align: center;
+  }
+
+  .parent .child {
+    display: inline-block;
+  }
+
+
+**/
+
+// <div class="block block--mod">...</div>
+//   <div class="block block--size-big block--shadow-yes">...</div>
+//   <p class="block block--size-small">....</p>
+// .box {
+//   background: red;
+// }
+
+// .big {
+//   font-size: 20px;
+// }
+
+// .small {
+//   font-size: 11px;
+// }
+
+// .block--shadow-yes {
+//   box-shadow: 1px 1px 1px #333;
+// }
