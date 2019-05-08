@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 import styles from "./styles.scss";
 
 const TileBlock = ({ title, imageUrl, notificationCount}) => {
+  console.log(styles);
   return (
-      <div className="tileBlock" data-notification-count={notificationCount === 0 ? "" : notificationCount}>       
-        <img className="propertyImage" src={imageUrl} alt="Property type" />
-        <div className="PropertyTitle">{title}</div>
+      <div className={styles.tileBlock} data-notification-count={notificationCount === 0 ? "" : notificationCount}>       
+        <img className={styles.propertyImage} src={imageUrl} alt="Property type" />
+        <div className={styles.propertyTitle}>{title}</div>
+        {/* <h2 class="hey-component">Heyyy</h2> */}
       </div>
   )
 }
