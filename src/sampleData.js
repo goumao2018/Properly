@@ -1,36 +1,41 @@
 export const tileBlockData = [
   {
-    title: "Apartment 1",
+    title: "Tiara APT",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment"
   },
   {
-    title: "Apartment 2",
+    title: "50 Haig st.",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment"
   },
   {
-    title: "Apartment 3",
+    title: "Riverside village",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment"
   }
 ];
 
 export const apartmentBlockData = [
   {
-    title: "Apartment 1",
+    title: "Tiara APT",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment",
     notificationCount: 3
   },
   {
-    title: "Apartment 2",
+    title: "50 Haig St.",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment",
     notificationCount: 1
   },
   {
-    title: "Apartment 3",
+    title: "Riverside village",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment",
     notificationCount: 0
   },
   {
-    title: "thing",
+    title: "Harbour Escape",
+    imageUrl: "http://www.placehold.it/200x200?text=Apartment",
+    notificationCount: 0
+  },
+  {
+    title: "301 King St.",
     imageUrl: "http://www.placehold.it/200x200?text=Apartment",
     notificationCount: 0
   }

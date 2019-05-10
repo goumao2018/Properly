@@ -1,20 +1,24 @@
+@import "../../assets/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
 :local {
   .tileLayout {
-    & > div {
-      display: inline-block;
-      width: 100%;
-    }
-    &[data-column-count="2"] {
-      &:before {
-        display: block;
-        content: "You selected 2 columns";
+    max-width: $max-tile-layout-width;
+    margin: auto;
+    @include query($medium) {
+      &[data-column-count="2"] {
+        &:before {
+          display: block;
+          content: "You selected 2 columns";
+        }
+        & > div {
+          display: inline-block;
+          width: 50%;
+        }
       }
-      & > div {
-        width: 50%;
+      &[data-column-count="3"] > div {
+        width: 33.33%;
       }
-    }
-    &[data-column-count="3"] > div {
-      width: 33.33%;
     }
   }
 }

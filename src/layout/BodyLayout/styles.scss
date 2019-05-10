@@ -1,0 +1,14 @@
+@import "../../assets/scss/_variables.scss";
+@import "../../assets/_mixins.scss";
+
+:local  {
+  .bodyLayout {
+    margin: 0 $margin-sm;
+    @include query($medium) {
+      margin: 0 $margin-md;
+    }
+    @include query($large) {
+      margin: 0 $margin-lg;
+    }
+  }
+}

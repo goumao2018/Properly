@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./App.scss";
 import TileBlock from "./components/TileBlock";
-import SearchTile from "./components/SearchTile/index";
-import AddTile from "./components/AddTile/index";
+import SearchTile from "./components/SearchTile";
+import AddTile from "./components/AddTile";
+import BodyLayout from "./layout/BodyLayout";
+import TileLayout from "./layout/TileLayout";
 import { apartmentBlockData } from "./sampleData";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { apartmentData: [apartmentBlockData], results: [] };
+    this.state = { apartmentData: apartmentBlockData, results: [] };
   }
   renderApartmentData = apartmentData =>
     apartmentData.map((item, index) => (
@@ -46,14 +48,17 @@ class App extends Component {
     const dataToRender = this.state.apartmentData || apartmentBlockData;
     return (
       <div className="App hero">
-        <SearchTile
-          apartmentData={this.state.apartmentData}
-          updateResult={this.updateApartmentData}
-        />
-        <AddTile addTile={this.addTile} />
-        <header className="App-header">
-          {this.renderApartmentData(dataToRender)}
-        </header>
+        <BodyLayout>
+          <TileLayout columnCount={2}>
+            <AddTile addTile={this.addTile} />
+            <SearchTile
+              apartmentData={this.state.apartmentData}
+              updateResult={this.updateApartmentData}
+            />
+            <header className="App-header" />
+            {this.renderApartmentData(dataToRender)}
+          </TileLayout>
+        </BodyLayout>
       </div>
     );
   }

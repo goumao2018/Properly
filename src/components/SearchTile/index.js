@@ -18,6 +18,7 @@ class SearchTile extends Component {
   };
 
   render() {
+    console.log(this.state.query, "heyyyyyyyy i am query");
     return (
       <form>
         <input
